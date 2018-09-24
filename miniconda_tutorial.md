@@ -115,4 +115,5 @@ curl https://zenodo.org/record/1324070/files/wt_H3K4me3_read1.fastq.gz >A.fastq.
 1. Uninstall seqtk: `conda remove -y seqtk`
 2. Install in environment: `conda create -n seqtk_env -y seqtk`
 3. Activate environment: `source activate seqtk_env`
-4. *Freeze* environment: `conda env export >seqtk.yml`
+4. Export environment specification to a file: `conda env export >seqtk.yml`
+5. Create a new enviroment from an exported specification: `conda env create -n seqtk_again --file seqtk.yaml`
