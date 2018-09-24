@@ -107,8 +107,8 @@ curl https://zenodo.org/record/1324070/files/wt_H3K4me3_read1.fastq.gz >A.fastq.
 ```
 
 3. Make a name list: `echo 'SRR5680996.11626500' >name.lst`
-4. Extract a sequence: `seqtk A.fastq.gz name.lst`
-5. Reverse complement the sequence: `seqtk A.fastq.gz name.lst|seqtk seq -r`
+4. Extract a sequence: `seqtk subseq A.fastq.gz name.lst`
+5. Reverse complement the sequence: `seqtk subseq A.fastq.gz name.lst | seqtk seq -r`
 
 ## Uninstall and re-install in 'environment'
 
