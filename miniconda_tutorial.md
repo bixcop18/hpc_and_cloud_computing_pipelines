@@ -9,7 +9,7 @@ The `conda` [package manager](https://en.wikipedia.org/wiki/Package_manager) was
 
 ## Advantages to using (bio)conda
 
-* Manages self contained environments, including dependencies. An 'ordinary user' can install it for themselves.
+* Manages self-contained environments, including dependencies. An "ordinary user" can install it for themselves.
 
 * Large ecosystem of precompiled packages, organized as 'channels' (eg conda-forge, bioconda)
 
@@ -25,7 +25,7 @@ The `conda` [package manager](https://en.wikipedia.org/wiki/Package_manager) was
 
 ## How to install conda
 
-1. Get Miniconda (on Linux):
+1. Get Miniconda from https://conda.io/miniconda.html (on Linux):
 
 ```
     curl -O https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
@@ -58,16 +58,16 @@ conda is a tool for managing and deploying applications, environments and packag
 1. Configure conda channels for bioconda
 ```
 conda config --add channels defaults
-conda config --add channels conda-forge
 conda config --add channels bioconda
+conda config --add channels conda-forge
 ```
 2. Check your conda config:
 ```
 $ cat ~/.condarc 
 channels:
-  - defaults
   - conda-forge
   - bioconda
+  - defaults
 ```
     
 ## Next steps: working with seqtk
