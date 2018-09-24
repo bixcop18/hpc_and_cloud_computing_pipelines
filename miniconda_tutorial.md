@@ -99,6 +99,10 @@ conda-4.3.33-p 100% |################################| Time: 0:00:01 279.73 kB/s
 
 2. Download some sample data
 ```
+wget -c -O A.fastq.gz https://zenodo.org/record/1324070/files/wt_H3K4me3_read1.fastq.gz
+```
+ OR
+```
 curl https://zenodo.org/record/1324070/files/wt_H3K4me3_read1.fastq.gz >A.fastq.gz
 ```
 
