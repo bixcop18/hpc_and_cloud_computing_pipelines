@@ -25,11 +25,20 @@ The `conda` [package manager](https://en.wikipedia.org/wiki/Package_manager) was
 
 ## How to install conda
 
-1. Get Miniconda:
+1. Get Miniconda (on Linux):
 
 ```
     curl -O https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
 ```
+    OR
+```
+    wget -c https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
+```
+    On MacOS:
+```
+    curl -O https://repo.continuum.io/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
+ ```
+ 
 2. Run the installer:
 ```
     bash Miniconda3-latest-Linux-x86_64.sh
