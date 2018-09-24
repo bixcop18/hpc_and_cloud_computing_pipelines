@@ -1,0 +1,7 @@
+rule complement:
+  input:
+    "data/{file}"
+  output:
+    "complement_data/{file}"
+  shell:
+    "cat {input}|tr atcg tagc > {output}"
