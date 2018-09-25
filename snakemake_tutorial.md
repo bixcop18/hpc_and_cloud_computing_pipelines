@@ -1,10 +1,10 @@
-Using snakemake
+Using Snakemake
 ===
-[Snakemake](https://snakemake.readthedocs.io/en/stable/) is a command line oriented workflow management system. In some ways it is conceptually similar to the Linux [make](https://www.tutorialspoint.com/unix_commands/make.htm) command in that it works using filename patterns and reasons about how to produce outputs given a collection of inputs and rules.
+[Snakemake](https://snakemake.readthedocs.io/en/stable/) is a command-line oriented workflow management system. In some ways it is conceptually similar to the Linux [make](https://www.tutorialspoint.com/unix_commands/make.htm) command in that it works using filename patterns and reasons about how to produce outputs given a collection of inputs and rules.
 
 ## Installing Snakemake
 
-Snakemake can be installed using bioconda with the `conda install snakemake` command.
+Snakemake can be installed using Bioconda with the `conda install snakemake` command.
 
 ## A first Snakemake example
 
