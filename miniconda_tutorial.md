@@ -27,48 +27,55 @@ The `conda` [package manager](https://en.wikipedia.org/wiki/Package_manager) was
 
 1. Get Miniconda from https://conda.io/miniconda.html (on Linux):
 
-```
-    curl -O https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
-```
-    OR
-```
-    wget -c https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
-```
-    On MacOS:
-```
-    curl -O https://repo.continuum.io/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
- ```
+   ```
+   curl -O https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
+   ```
+
+   or
+
+   ```
+   wget -c https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
+   ```
+
+   On MacOS:
+
+   ```
+   curl -O https://repo.continuum.io/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
+   ```
  
 2. Run the installer:
-```
-    bash Miniconda3-latest-Linux-x86_64.sh
-```
-3. At the prompt agree to the license (type *yes* and press Enter) and install to the default location ($HOME/miniconda3). When asked agree to add the Miniconda python to the path, then log out and back in again.
+   ```
+   bash Miniconda3-latest-Linux-x86_64.sh
+   ```
+
+3. At the prompt agree to the license (type *yes* and press Enter) and install to the default location ($HOME/miniconda3). When asked, agree to add the Miniconda `bin` directory to the PATH, then log out and back in again.
+
 4. Test that it is installed:
-```
-$ conda help
-usage: conda [-h] [-V] command ...
+   ```
+   $ conda help
+   usage: conda [-h] [-V] command ...
 
-conda is a tool for managing and deploying applications, environments and packages.
+   conda is a tool for managing and deploying applications, environments and packages.
 
-...
-```
+   ...
+   ```
 
 ## Install bioconda
 1. Configure conda channels for bioconda
-```
-conda config --add channels defaults
-conda config --add channels bioconda
-conda config --add channels conda-forge
-```
+   ```
+   conda config --add channels defaults
+   conda config --add channels bioconda
+   conda config --add channels conda-forge
+   ```
+
 2. Check your conda config:
-```
-$ cat ~/.condarc 
-channels:
-  - conda-forge
-  - bioconda
-  - defaults
-```
+   ```
+   $ cat ~/.condarc 
+   channels:
+     - conda-forge
+     - bioconda
+     - defaults
+   ```
     
 ## Next steps: working with seqtk
 
@@ -98,13 +105,15 @@ conda-4.3.33-p 100% |################################| Time: 0:00:01 279.73 kB/s
 ```
 
 2. Download some sample data
-```
-wget -c -O A.fastq.gz https://zenodo.org/record/1324070/files/wt_H3K4me3_read1.fastq.gz
-```
- OR
-```
-curl https://zenodo.org/record/1324070/files/wt_H3K4me3_read1.fastq.gz >A.fastq.gz
-```
+   ```
+   wget -c -O A.fastq.gz https://zenodo.org/record/1324070/files/wt_H3K4me3_read1.fastq.gz
+   ```
+
+   or
+
+   ```
+   curl https://zenodo.org/record/1324070/files/wt_H3K4me3_read1.fastq.gz >A.fastq.gz
+   ```
 
 3. Make a name list: `echo 'SRR5680996.11626500' >name.lst`
 4. Extract a sequence: `seqtk subseq A.fastq.gz name.lst`
