@@ -121,8 +121,28 @@ conda-4.3.33-p 100% |################################| Time: 0:00:01 279.73 kB/s
 
 ## Uninstall and re-install in 'environment'
 
-1. Uninstall seqtk: `conda remove -y seqtk`
-2. Install in environment: `conda create -n seqtk_env -y seqtk`
-3. Activate environment: `source activate seqtk_env`
-4. Export environment specification to a file: `conda env export >seqtk.yml`
-5. Create a new enviroment from an exported specification: `conda env create -n seqtk_again --file seqtk.yaml`
+The examples shown above have worked in the conda "root environment". For reproducible research it is good to keep dependencies needed for a specific task isolated from those needed for other tasks. Conda supports [environments](https://conda.io/docs/user-guide/tasks/manage-environments.html), which are isolated workspaces that can have their own versions of packages installed. There are two key concepts to environments:
+
+1. Environments only store the packages explicitely installed by the user (and their dependencies). What is installed in an environment can be listed with `conda list`.
+
+2. Different environments can have different versions of tools installed. For example one environment can have Python 2 installed whereas another can have Python 3.
+
+Having learned about environments we can now uninstall `seqtk` from the root environment:
+
+* Uninstall seqtk: `conda remove -y seqtk`
+
+and create an environment named `seqtk_env` into which we have installed `seqtk`.
+
+* Install in environment: `conda create -n seqtk_env -y seqtk`
+
+Switching to an environment is called *activating* that environment:
+
+*  Activate environment: `source activate seqtk_env`
+
+And if you want to save or share the environment definition you can export it to a file:
+
+* Export environment specification to a file: `conda env export >seqtk.yml`
+
+Finally, that environment definition can be used to create a new environment in a conda install:
+
+* Create a new environment from an exported specification: `conda env create -n seqtk_again --file seqtk.yaml`
