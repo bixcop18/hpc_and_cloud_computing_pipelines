@@ -1,0 +1,15 @@
+<tool id="hello" name="hello" version="0.0.1">
+  <descrcption>Hello World</descrcption>
+  <command><![CDATA[
+    /bin/echo 'Hello ${name}' > '$output1'
+  ]]></command>
+  <inputs>
+    <param name="name" type="text" label="What is your name?"/>
+  </inputs>
+  <outputs>
+    <data name="output1" format="txt" label="Greeting on ${on_string}"/>
+  </output1>
+  <help><![CDATA[
+    This tool greets people.
+  ]]></help>
+</tool>
