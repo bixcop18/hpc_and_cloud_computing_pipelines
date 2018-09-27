@@ -1,6 +1,6 @@
 <tool id="hello" name="hello" version="0.0.1">
   <description>Hello World</description>
-  <command><![CDATA[
+  <command detect_errors="exit_code"><![CDATA[
     /bin/echo 'Hello ${name}' > '$output1'
   ]]></command>
   <inputs>
@@ -9,6 +9,12 @@
   <outputs>
     <data name="output1" format="txt" label="Greetings!"/>
   </outputs>
+  <tests>
+    <test>
+      <param name="name" value="Vlad"/>
+      <output name="output1" file="output.txt"/>
+    </test>
+  </tests>
   <help><![CDATA[
     This tool greets people.
   ]]></help>
