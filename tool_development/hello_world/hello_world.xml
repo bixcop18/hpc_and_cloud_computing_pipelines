@@ -1,5 +1,5 @@
 <tool id="hello" name="hello" version="0.0.1">
-  <descrcption>Hello World</descrcption>
+  <description>Hello World</description>
   <command><![CDATA[
     /bin/echo 'Hello ${name}' > '$output1'
   ]]></command>
@@ -8,7 +8,7 @@
   </inputs>
   <outputs>
     <data name="output1" format="txt" label="Greeting on ${on_string}"/>
-  </output1>
+  </outputs>
   <help><![CDATA[
     This tool greets people.
   ]]></help>
