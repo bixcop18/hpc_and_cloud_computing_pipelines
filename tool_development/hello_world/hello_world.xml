@@ -7,7 +7,7 @@
     <param name="name" type="text" label="What is your name?"/>
   </inputs>
   <outputs>
-    <data name="output1" format="txt" label="Greeting on ${on_string}"/>
+    <data name="output1" format="txt" label="Greetings!"/>
   </outputs>
   <help><![CDATA[
     This tool greets people.
