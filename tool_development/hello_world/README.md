@@ -1,6 +1,21 @@
 ### A hello world example for Galaxy
 
 This is a very simple "hello world" tool wrapper for [Galaxy](https://www.galaxyproject.org/).
+
+#### Steps to use:
+
+1. Make a working directory such as `hello_world/` (`mkdir hello_world`)
+2. Change directory into this directory (`cd hello_world`)
+3. Download the tool wrapper:
+```
+wget https://raw.githubusercontent.com/bixcop18/hpc_and_cloud_computing_pipelines/master/tool_development/hello_world/hello_world.xml
+```
+4. Make a `test-data` directory (`mkdir test-data`)
+5. Download the test data file to this directory:
+```
+wget -O test-data/output.txt https://raw.githubusercontent.com/bixcop18/hpc_and_cloud_computing_pipelines/master/tool_development/hello_world/test-data/output.txt
+```
+
 To work with this install [planemo](https://planemo.readthedocs.io/en/latest/).
 
 To test that the file is correct, use the `planemo lint --skip 'citations'` command. You should see:
