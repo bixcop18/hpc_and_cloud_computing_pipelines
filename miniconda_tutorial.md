@@ -76,8 +76,17 @@ The `conda` [package manager](https://en.wikipedia.org/wiki/Package_manager) was
      - bioconda
      - defaults
    ```
-    
-## Next steps: working with seqtk
+
+## Search packages
+
+You can discover if a tool you are interested in is available as a conda package by executing `conda search`. For example, if you want to look for the seqtk tool, you can run:
+```
+$ conda search seqtk
+```
+
+Alternatively, you can search for it on the https://anaconda.org website, which is often faster.
+
+## Install and run seqtk
 
 1. Install the seqtk package:
 ```
