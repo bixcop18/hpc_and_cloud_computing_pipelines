@@ -13,3 +13,16 @@ Presented materials:
 - [Overview of the Galaxy Training Material](http://galaxyproject.github.io/training-material/topics/contributing/slides/introduction.html)
 - [Tool development and integration into Galaxy](http://galaxyproject.github.io/training-material/topics/dev/tutorials/tool-integration/slides.html)
 - [Building Galaxy Tools Using Planemo](https://planemo.readthedocs.io/en/latest/writing_standalone.html)
+- [Galaxy from an administrator point of view](http://galaxyproject.github.io/training-material/topics/admin/slides/introduction.html#1)
+- [Galaxy Deployment and Platform Options](http://galaxyproject.github.io/training-material/topics/admin/tutorials/deployment-platforms-options/slides.html#1)
+- [Ansible and Galaxy](https://galaxyproject.github.io/dagobah-training/2018-cape-town/14-ansible/ansible-introduction.html#1)
+- [Set up a Production Galaxy with Ansible](https://github.com/galaxyproject/dagobah-training/blob/2018-cape-town/sessions/14-ansible/ex2-galaxy-ansible.md)
+- [Ansible - for reference, won't be taught](http://galaxyproject.github.io/training-material/topics/admin/tutorials/ansible/tutorial.html)
+
+#### Virtual Machines used during Admin Training
+
+* [ilridemo1.sanbi.ac.za](http://ilridemo1.sanbi.ac.za)
+* [ilridemo2.sanbi.ac.za](http://ilridemo2.sanbi.ac.za)
+* [ilridemo3.sanbi.ac.za](http://ilridemo3.sanbi.ac.za)
+
+These are set up on the [SANBI](http://www.sanbi.ac.za) [OpenStack](https://www.openstack.org/) research cloud infrastructure and will only be available during the training.
