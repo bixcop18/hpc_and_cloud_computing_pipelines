@@ -18,6 +18,7 @@ Presented materials:
 - [Ansible and Galaxy](https://galaxyproject.github.io/dagobah-training/2018-cape-town/14-ansible/ansible-introduction.html#1)
 - [Set up a Production Galaxy with Ansible](https://github.com/galaxyproject/dagobah-training/blob/2018-cape-town/sessions/14-ansible/ex2-galaxy-ansible.md)
 - [Ansible - for reference, won't be taught](http://galaxyproject.github.io/training-material/topics/admin/tutorials/ansible/tutorial.html)
+- [Ten Simple Rules for Setting up a Galaxy Instance as a Service](https://galaxyproject.org/admin/ten-simple-steps-galaxy-as-a-service)
 
 #### Virtual Machines used during Admin Training
 
